@@ -1,0 +1,314 @@
+﻿@charset "utf-8";  
+/*  
+  Document   : CSS样式初始化  
+
+/* reset */  
+*{box-sizing: border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;}
+body {background:#FFFFFF; margin:0; padding:0;font-family:Arial,Helvetica,san-serif;font-size:16px;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}  /* 初始化标签在所有浏览器中的margin、padding值 */    
+body,th,td,input,select,textarea,button {font-family:"微软雅黑", '黑体', 'Arial';} /* 重置页面文字属性 */  
+input,select,textarea,button {vertical-align:middle}  /* 重置表单控件垂直居中*/  
+body {background:#fff}   /* 重置body 页面背景为白色 */  
+a {color:#666;text-decoration:none}  /* 重置链接a标签 */  
+a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */  
+table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}    /* 重置table属性 */  
+img{vertical-align:top;padding:0px;margin:0px;border:none;outline: none;width:100%;height:auto;}  /* 图片在当前行内的垂直位置 */  
+   
+/* 页面设置 */  
+   
+  /* 取消a标签点击后的虚线框 */  
+a {outline: none;}    
+a:active {star:expression(this.onFocus=this.blur());}  
+   
+ /* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */  
+/*   
+::selection {color: #fff;background-color: #4C6E78;}      
+::-moz-selection {color: #fff;background-color: #4C6E78;}   
+*/  
+  
+/*清除浮动*/  
+.clear{clear: both;}  
+  
+/*清除浮动--推荐使用*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;} 
+
+/* 常用css样式预留 */
+.red{color:red;};
+.red-bg{background:red;}
+.yellow{color:yellow;};
+.yellow-bg{background:yellow;}
+.bold{font-weight:bold;}
+.redb{color:red;font-weight: bold;}
+.copy-text{-webkit-user-select:text;-moz-user-select: text;-o-user-select: text;user-select: text;}
+.orange-cut-line{border-bottom:1px dashed #FA836F;margin: 20px 0px 20px 0px;}/* 橙色虚线分割 */
+
+
+			.agl-hover {
+				outline: 2px solid rgba(244, 67, 54, 0.99) !important;
+				background-color: rgba(244, 67, 54, 0.2) !important;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+			}
+			
+			.agl-highlight-current {
+				outline: 2px solid rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-highlight-similar {
+				outline: 2px dashed rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-highlight-group {
+				outline: 4px double rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-cover-current {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outline: 2px solid rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-similar {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outline: 2px dashed rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-group {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outline: 4px double rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-focus {
+				outline: 3px solid rgba(255, 165, 0, 0.99) !important;
+				background-color: rgba(255, 165, 0, 0.4) !important;
+			}
+			
+.agl-hover {
+				outline: 2px solid rgba(244, 67, 54, 0.99) !important;
+				background-color: rgba(244, 67, 54, 0.2) !important;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+			}
+			
+			.agl-highlight-current {
+				outline: 2px solid rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-highlight-similar {
+				outline: 2px dashed rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-highlight-group {
+				outline: 4px double rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-cover-current {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outline: 2px solid rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-similar {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outline: 2px dashed rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-group {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outline: 4px double rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-focus {
+				outline: 3px solid rgba(255, 165, 0, 0.99) !important;
+				background-color: rgba(255, 165, 0, 0.4) !important;
+			}
+			
+.agl-hover {
+				outWeChat ID: 2px solid rgba(244, 67, 54, 0.99) !important;
+				background-color: rgba(244, 67, 54, 0.2) !important;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+			}
+			
+			.agl-highlight-current {
+				outWeChat ID: 2px solid rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-highlight-similar {
+				outWeChat ID: 2px dashed rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-highlight-group {
+				outWeChat ID: 4px double rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-cover-current {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outWeChat ID: 2px solid rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-similar {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outWeChat ID: 2px dashed rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-group {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outWeChat ID: 4px double rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-focus {
+				outWeChat ID: 3px solid rgba(255, 165, 0, 0.99) !important;
+				background-color: rgba(255, 165, 0, 0.4) !important;
+			}
+			
+.agl-hover {
+				outWeChat ID: 2px solid rgba(244, 67, 54, 0.99) !important;
+				background-color: rgba(244, 67, 54, 0.2) !important;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+			}
+			
+			.agl-highlight-current {
+				outWeChat ID: 2px solid rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-highlight-similar {
+				outWeChat ID: 2px dashed rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-highlight-group {
+				outWeChat ID: 4px double rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-cover-current {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outWeChat ID: 2px solid rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-similar {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outWeChat ID: 2px dashed rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-group {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outWeChat ID: 4px double rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-focus {
+				outWeChat ID: 3px solid rgba(255, 165, 0, 0.99) !important;
+				background-color: rgba(255, 165, 0, 0.4) !important;
+			}
+			
+.agl-hover {
+				outline: 2px solid rgba(244, 67, 54, 0.99) !important;
+				background-color: rgba(244, 67, 54, 0.2) !important;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+			}
+			
+			.agl-highlight-current {
+				outline: 2px solid rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-highlight-similar {
+				outline: 2px dashed rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-highlight-group {
+				outline: 4px double rgba(255, 87, 34, 0.99) !important;
+				background-color: rgba(255, 87, 34, 0.4) !important;
+			}
+			
+			.agl-cover-current {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outline: 2px solid rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-similar {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outline: 2px dashed rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-group {
+				position: absolute !important;
+				top: 0;
+				left: 0;
+				z-index: 9 !important;
+				outline: 4px double rgba(33, 33, 33, 0.99) !important;
+				background-color: rgba(33, 33, 33, 0.6) !important;
+			}
+			
+			.agl-cover-focus {
+				outline: 3px solid rgba(255, 165, 0, 0.99) !important;
+				background-color: rgba(255, 165, 0, 0.4) !important;
+			}
+			
+.goline{
+	padding:3px 6px;background: #E6605C;color:#FFFF00;font-size: 1.2em;
+}
